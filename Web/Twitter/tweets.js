@@ -14,33 +14,13 @@
 var https = require('https');
 
 var ENV = {
-	TWITTER_KEY : 'r9XnjvzCSiaOXuQvhoAaj1sN3',
-	TWITTER_SECRET : '3bIkumx23ZG1iutvpUV7youKAZ0KfOcPfdMxblQBRLztyy5b6s',
+	TWITTER_KEY : '',
+	TWITTER_SECRET : '',
 	token : {
-		accessToken : '1055147588-H47gvi8ksLCleR1s6eyQGUQZ0FcFuTnIUuzSeay',
-		tokenSecret : 'pJRvLhKlpe061cNNuNtHjeRwvWlq5cWzWhHXVJtI7Ofol'
+		accessToken : '',
+		tokenSecret : ''
 	}
 };
-
-/*
-var twitter = new twit({
-	consumer_key: ENV.TWITTER_KEY,
-  	consumer_secret: ENV.TWITTER_SECRET,
-  	access_token: ENV.token.accessToken,
-  	access_token_secret: ENV.token.tokenSecret
-});
-*/
-
-/*
-Authorization: OAuth 
-oauth_consumer_key="r9XnjvzCSiaOXuQvhoAaj1sN3", 
-oauth_nonce="2fd949de5311552133fea807dc59b86c", 
-oauth_signature="ZobyYA0lUI41HOyFp5xBU5myrp8%3D", 
-oauth_signature_method="HMAC-SHA1", 
-oauth_timestamp="1452441019", 
-oauth_token="1055147588-H47gvi8ksLCleR1s6eyQGUQZ0FcFuTnIUuzSeay", 
-oauth_version="1.0"
-*/
 
 var requstParameters = {
 	headers : {
@@ -52,12 +32,12 @@ var requstParameters = {
 	},
 	authorization : {
 		"OAuth" : {
-			oauth_consumer_key : escape('r9XnjvzCSiaOXuQvhoAaj1sN3'),
-			oauth_nonce : escape('2fd949de5311552133fea807dc59b86c'),
-			oauth_signature : escape('95qJmr7U25aBSsp7nIfJrD09K88='),
+			oauth_consumer_key : escape(''),
+			oauth_nonce : escape(''),
+			oauth_signature : escape(''),
 			oauth_signature_method : unescape('HMAC-SHA1'),
 			oauth_timestamp : Date.now(),
-			oauth_token : escape('1055147588-H47gvi8ksLCleR1s6eyQGUQZ0FcFuTnIUuzSeay'),
+			oauth_token : escape(''),
 			oauth_version : '1.0'
 		}
 	},
